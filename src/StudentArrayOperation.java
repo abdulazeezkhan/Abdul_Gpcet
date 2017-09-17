@@ -1,11 +1,11 @@
+package StudentArrayOperation;
+
+
 import java.util.Date;
+import Student.*;
 
-/**
- * An interface that provide a number of operations for any array of students
- *
- */
-public interface StudentArrayOperation {
-
+public interface StudentArrayOperation
+{
 	/**
 	 * Returns the array of students
 	 * 
@@ -276,3 +276,6 @@ public interface StudentArrayOperation {
 	Student getNextStudent(Student student);
 
 }
+
+
+
