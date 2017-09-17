@@ -32,7 +32,7 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void setStudents(Student[] students) {
-		// Add your implementation here
+		
 	}
 
 	@Override
@@ -93,6 +93,17 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void bubbleSort() {
+	for (int i = 0; i < students.length-1; i++)
+	    {
+	      for (int j = 0; j < students.length- i - 1; j++)
+	      {
+	        if (students[j] > students[j+1])
+	        {
+	          Student temp        = students[j];
+	          students[j]   = students[j+1];
+	          students[j+1] = temp;
+	        }
+	      }
 		// Add your implementation here
 	}
 
