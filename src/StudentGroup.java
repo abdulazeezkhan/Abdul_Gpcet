@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.util.Scanner;
 
 /**
  * A fix-sized array of students
@@ -13,6 +14,7 @@ import java.util.Date;
  */
 public class StudentGroup implements StudentArrayOperation {
 
+	
 	private Student[] students;
 	
 	/**
@@ -25,60 +27,93 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public Student[] getStudents() {
+		return students;
+
 		// Add your implementation here
-		return null;
+		
 	}
 
 	@Override
 	public void setStudents(Student[] students) {
+		
+				
 		// Add your implementation here
-	}
+	
 
 	@Override
-	public Student getStudent(int index) {
-		// Add your implementation here
+	public Student getStudent(int index)
+	{
+		try
+		{
+		if(index<0 && index>=students.length)
+		{
+			 throw new IllegalArgumentException();
+		}
+		}
+		catch(Exception e){System.out.println(e);}
+		
+		
+		// dd your implementation here
 		return null;
 	}
 
 	@Override
-	public void setStudent(Student student, int index) {
+	public void setStudent(Student student, int index)
+	{
 		// Add your implementation here
 	}
 
 	@Override
-	public void addFirst(Student student) {
+	public void addFirst(Student student)
+	{
+			
+			
+			
+		
 		// Add your implementation here
 	}
 
 	@Override
-	public void addLast(Student student) {
+	public void addLast(Student student)
+	{
 		// Add your implementation here
 	}
 
 	@Override
-	public void add(Student student, int index) {
+	public void add(Student student, int index)
+	{
 		// Add your implementation here
 	}
 
 	@Override
 	public void remove(int index) {
+		
+		
 		// Add your implementation here
 	}
 
 	@Override
 	public void remove(Student student) {
+
 		// Add your implementation here
 	}
 
 	@Override
 	public void removeFromIndex(int index) {
+
+
+		
 		// Add your implementation here
 	}
 
 	@Override
 	public void removeFromElement(Student student) {
-		// Add your implementation here
+
 	}
+		
+		
+// Add your implementation here
+	
 
 	@Override
 	public void removeToIndex(int index) {
@@ -87,11 +122,15 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void removeToElement(Student student) {
+	
 		// Add your implementation here
 	}
 
 	@Override
 	public void bubbleSort() {
+		
+	 
+		
 		// Add your implementation here
 	}
 
@@ -133,6 +172,7 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public Student getNextStudent(Student student) {
+		
 		// Add your implementation here
 		return null;
 	}
