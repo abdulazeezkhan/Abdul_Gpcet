@@ -1,6 +1,3 @@
-package Student;
-
-
 import java.util.Date;
 
 /**
@@ -11,21 +8,21 @@ import java.util.Date;
  * or hashCode() method
  * 
  */
-public class Student implements Comparable<Object> {
+public class Student implements Comparable {
 
 	/**
 	 * student id
 	 */
-	public int id;
+	private int id;
 
 	/**
 	 * student name and surname separated by the whitespace for example:
-	 * fullName = "";
+	 * fullName = "David Luis";
 	 */
 	private String fullName;
 
 	/**
-	 * student date of birth in  format
+	 * student date of birth in "yyyy-MM-dd" format
 	 */
 	private Date birthDate;
 
@@ -33,12 +30,6 @@ public class Student implements Comparable<Object> {
 	 * student average mark
 	 */
 	private double avgMark;
-
-	public String fullname;
-
-	public double avgMarks;
-
-	public Object birthdate;
 
 	public Student(int id, String fullName, Date birthDate, double avgMark) {
 		this.id = id;
