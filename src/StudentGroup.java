@@ -43,14 +43,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index)
 	{
-		try
-		{
-		if(index<0 && index>=students.length)
-		{
-			 throw new IllegalArgumentException();
-		}
-		}
-		catch(Exception e){System.out.println(e);}
+		
 		
 		
 		//  your implementation here
